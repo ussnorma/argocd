@@ -1,0 +1,13 @@
+project: default
+source:
+  repoURL: 'https://ussnorma.github.io/helm-releases/'
+  targetRevision: 0.1.0
+  chart: jenkins-helm
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: helm-jenkins
+syncPolicy:
+  automated:
+    prune: true
+  syncOptions:
+    - CreateNamespace=true
