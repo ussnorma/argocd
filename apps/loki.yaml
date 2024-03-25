@@ -19,7 +19,7 @@ spec:
         - name: loki.limitsConfig.retentionPeriod
           value: '720h'
     repoURL: https://grafana.github.io/helm-charts
-    targetRevision: 2.10.2
+    targetRevision: 2.9.11
   syncPolicy:
     automated: {}
     syncOptions:
