@@ -11,7 +11,7 @@ spec:
   source:
     chart: wordpress
     repoURL: https://ussnorma.github.io/helm/
-    targetRevision: $WVER
+    targetRevision: 20.1.2
   syncPolicy:
     automated:
       prune: true
