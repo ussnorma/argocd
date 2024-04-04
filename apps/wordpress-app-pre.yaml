@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: wordpress-helm
-    repoURL: https://ussnorma.github.io/helm-releases/
+    chart: wordpress
+    repoURL: https://ussnorma.github.io/helm/
     targetRevision: $WVER
   syncPolicy:
     automated:
