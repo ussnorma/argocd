@@ -11,7 +11,7 @@ spec:
   source:
     chart: nfs-subdir-external-provisioner
     repoURL: https://ussnorma.github.io/helm-releases/
-    targetRevision: 4.0.18
+    targetRevision: 4.0.2
   syncPolicy:
     automated:
       prune: true
