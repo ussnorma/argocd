@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: wordpress-pre
   namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.on-deployed.slack: devops-project
 spec:
   destination:
     namespace: pre-prod
@@ -11,7 +13,7 @@ spec:
   source:
     chart: wordpress
     repoURL: https://ussnorma.github.io/helm/
-    targetRevision: 20.1.2
+    targetRevision: 20.1.5
   syncPolicy:
     automated:
       prune: true
