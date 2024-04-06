@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: wordpress-pre
+  name: wordpress-main
   namespace: argocd
   annotations:
     notifications.argoproj.io/subscribe.on-deployed.slack: devops-project
 spec:
   destination:
-    namespace: pre-prod
+    namespace: prod
     server: https://kubernetes.default.svc
   project: default
   source:
@@ -15,7 +15,7 @@ spec:
     helm:
       parameters:
       - name: ingress.hostname
-        value: wordpress-pre.k8s-9.sa
+        value: wordpress-main.k8s-9.sa
     repoURL: https://ussnorma.github.io/helm/
     targetRevision: 20.1.10
   syncPolicy:
