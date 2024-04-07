@@ -17,7 +17,7 @@ spec:
       - name: ingress.hostname
         value: wordpress-pre.k8s-9.sa
     repoURL: https://ussnorma.github.io/helm/
-    targetRevision: 20.1.11
+    targetRevision: 20.1.12
   syncPolicy:
     automated:
       prune: true
